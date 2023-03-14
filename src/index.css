@@ -7,6 +7,23 @@
     .link-menu {
       @apply text-primary-200 text-2xl w-full text-center
       hover:text-primary-300 hover:bg-primary-400
-      transition-all duration-75;
+      transition-all duration-75
+      md:text-lg md:w-fit md:p-2 md:rounded;
+    }
+    .footer-link {
+        @apply flex gap-2 items-center justify-center text-lg;
+    }
+
+    .footer-icon {
+        @apply rounded-full w-8 h-8 bg-primary-300 flex items-center justify-center
     }
   }
+
+  .fa-brands.fa-instagram {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  
