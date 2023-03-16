@@ -17,16 +17,9 @@ export const Header = () => {
           <i id='menu' className={`fa-solid fa-${menu ? 'xmark': 'bars'} text-3xl text-primary-200`}></i>
         </button>
         <AnimatePresence>
-          {/* ${menu ? 'flex':'hidden'} */}
-          {
-          menu && <motion.nav 
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: 50 }}
-          transition={{ duration: 0.2 }}
-          
+          <nav
           className={`
-          flex
+          ${menu ? 'flex':'hidden'}
           container
           absolute top-16
           flex-col gap-5 bg-primary-300
@@ -35,8 +28,7 @@ export const Header = () => {
             <a href="#prop" className='link-menu' onClick={()=>setMenu(false)}>PROPUESTA</a>
             <a href="#form" className='link-menu' onClick={()=>setMenu(false)}>INSCRIPCIONES</a>
             <a href="#form" className='link-menu' onClick={()=>setMenu(false)}>CONTACTO</a>
-          </motion.nav>
-          }
+          </nav>
         </AnimatePresence>
     </header>
   )

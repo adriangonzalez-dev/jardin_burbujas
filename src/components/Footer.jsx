@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <div className='container mx-auto w-full p-2
+    <footer className='container mx-auto w-full p-2
     bg-primary-100
     flex flex-col items-center justify-center gap-2 text-primary-300
     md:flex-row'>
@@ -22,6 +22,7 @@ export const Footer = () => {
                 <a href="" className='footer-icon'><i className="fa-brands fa-twitter text-media-twitter"></i></a>
             </div>
         </div>
-    </div>
+        <a href='https://adriangonzalez.tech' target='_blank'>Creado por adriangonzalez.tech</a>
+    </footer>
   )
 }
