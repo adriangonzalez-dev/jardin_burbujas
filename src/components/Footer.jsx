@@ -2,10 +2,11 @@ import React from 'react'
 
 export const Footer = () => {
   return (
+    
     <footer className='container mx-auto w-full p-2
     bg-primary-100
-    flex flex-col items-center justify-center gap-2 text-primary-300
-    md:flex-row'>
+    flex flex-col items-center justify-center gap-2 text-primary-300'>
+      <div className='flex flex-col md:flex-row w-full justify-between'>
         <div className='w-full flex flex-col items-center justify-center'>
             <h4 className='font-semibold text-xl'>DATOS DE CONTACTO</h4>
             <p className='footer-link'><i className="fa-solid fa-location-dot"></i> <b>Av. de mayo 554</b></p>
@@ -22,7 +23,9 @@ export const Footer = () => {
                 <a href="" className='footer-icon'><i className="fa-brands fa-twitter text-media-twitter"></i></a>
             </div>
         </div>
-        <a href='https://adriangonzalez.tech' target='_blank'>Creado por adriangonzalez.tech</a>
+      </div>
+
+        <a href='https://adriangonzalez.tech' target='_blank' className='w-full text-center'>Creado por adriangonzalez.tech</a>
     </footer>
   )
 }
