@@ -1,5 +1,7 @@
 import banner from '../../assets/images/fucsia.png';
-import {image1,image2,image3,image4,image5,image6,image7} from '../../assets/images/images'
+import {image1,image2,image7} from '../../assets/images/images'
+import { Form } from './Form';
+import { Slider } from './Slider';
 
 export const Main = () => {
   return (
@@ -43,6 +45,18 @@ export const Main = () => {
                 </div>
             </article>
         </section>
+        <Slider/>
+        <div className='w-full flex flex-col md:flex-row-reverse gap-2'>
+            <Form/>
+            <div className='w-full h-96 my-2 flex flex-col justify-center'>
+                <h2 className='text-xl text-primary-100 text-center'>ENCONTRANOS!</h2>
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.4614328989455!2d-58.845399849052356!3d-34.49118435896404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9bc2563c985d%3A0x5f11f217a19f2462!2sAv.%20de%20Mayo%2C%20B1635%20Pres.%20Derqui%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1678812863813!5m2!1ses!2sar" allowFullScreen="" 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                className='w-full h-full md:h-3/4'></iframe>
+            </div>
+        </div>
     </main>
   )
 }

@@ -17,6 +17,10 @@ module.exports = {
           facebook: '#3b5998',
           twitter: '#00acee',
           whatsapp: '#25D366'
+        },
+        danger: {
+          100: '#dc3545',
+          200: '#dc35454d'
         }
       },
       fontFamily: {
