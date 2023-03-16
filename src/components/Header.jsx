@@ -31,10 +31,10 @@ export const Header = () => {
           absolute top-16
           flex-col gap-5 bg-primary-300
           md:flex md:flex-row md:static md:gap-1 md:justify-end`}>
-            <a href="" className='link-menu'>INICIO</a>
-            <a href="" className='link-menu'>PROPUESTA</a>
-            <a href="" className='link-menu'>INSCRIPCIONES</a>
-            <a href="" className='link-menu'>CONTACTO</a>
+            <a href="#init" className='link-menu' onClick={()=>setMenu(false)}>INICIO</a>
+            <a href="#prop" className='link-menu' onClick={()=>setMenu(false)}>PROPUESTA</a>
+            <a href="#form" className='link-menu' onClick={()=>setMenu(false)}>INSCRIPCIONES</a>
+            <a href="#form" className='link-menu' onClick={()=>setMenu(false)}>CONTACTO</a>
           </motion.nav>
           }
         </AnimatePresence>

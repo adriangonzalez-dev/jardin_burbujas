@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  scroll-behavior: smooth;
+}
+
 @layer components {
     .link-menu {
       @apply text-primary-200 text-2xl w-full text-center

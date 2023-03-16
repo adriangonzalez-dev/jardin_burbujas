@@ -9,7 +9,7 @@ export const Form = () => {
         console.log(data);
     }
   return (
-    <div className='w-full flex flex-col p-2 text-primary-100 items-center justify-center'>
+    <div className='w-full flex flex-col p-2 text-primary-100 items-center justify-center' id='form'>
         <h2 className='text-xl'>ESCRIBINOS!</h2>
         <form 
         className='w-full flex flex-col gap-2 items-center justify-center'
